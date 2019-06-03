@@ -3,8 +3,9 @@
               xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent" android:layout_marginTop="@dimen/layoutMargin"
->
+              android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/layoutMargin"
+              android:paddingRight="@dimen/padding" android:paddingLeft="@dimen/padding">
 
     <TextView
             android:text="@string/name"
@@ -14,6 +15,33 @@
             android:textAlignment="center"
             style="@style/NameStyle"/>
 
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/nickname" style="@style/NameStyle" android:textAlignment="center"
+            android:hint="@string/what_is_your_nickname"/>
+    <Button
+            android:text="@string/done"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto_thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/done"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/nicknametext" style="@style/NameStyle"
+            android:visibility="gone" android:inputType="text" android:textAlignment="center"/>
+    <Button
+            android:text="@string/edit_text"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto_thin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit" android:visibility="gone"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +57,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/bio_text"
-                tools:text="@string/bio_text"/>
+                tools:text="@string/bio_text"
+                style="@style/NameStyle" android:lineSpacingMultiplier="@dimen/line_multiplier"/>
     </ScrollView>
 
 </LinearLayout>

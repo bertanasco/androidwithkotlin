@@ -33,4 +33,7 @@
         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
         anim id est laborum.
     </string>
+    <string name="what_is_your_nickname">What is your nickname</string>
+    <string name="done">Done</string>
+    <string name="edit_text">Edit</string>
 </resources>
